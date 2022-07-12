@@ -29,3 +29,46 @@ const getComputerChoice = () => {
     //Return the computer choice 
     return computerChoice;
 };
+
+//Function to start the game 
+const startGame = (playerChoice) => {
+
+    //Call the function to get the computer choice 
+    let computerChoice = getComputerChoice();
+
+    //Display the plater choice based on button clicked 
+    showPlayerChoice.textContent = playerChoice;
+
+    //Determine who wins, lose, or if it is a tie
+    if (playerChoice === computerChoice) {
+
+        //Display message that it's a tie
+        determineWinner.textContent = "It's a Tie!";
+
+    } else if (
+        (playerChoice === "Rock" && computerChoice === "Scissor") ||
+        (playerChoice === "Paper" && computerChoice === "Rock") ||
+        (playerChoice === "Scissor" && computerChoice === "Paper")
+    ) {
+
+        //Display message that player wins
+        determineWinner.textContent = "You Win!";
+
+        //Increment the player score
+        playerScore++;
+
+        //Display the player score
+        displayPlayerScore.textContent = playerScore;
+
+    } else {
+
+        //Display message that player lost
+        determineWinner.textContent = "You Lose!";
+
+        //Increment the computer score
+        computerScore++;
+
+        //Display the computer score 
+        displayComputerScore.textContent = computerScore;
+    };
+};
