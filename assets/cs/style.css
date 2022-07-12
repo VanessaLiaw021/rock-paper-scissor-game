@@ -1,0 +1,124 @@
+/* Import font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+:root {
+    --light-black: #484848;
+}
+
+/* Universal Selectors */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+/* Element Selectors */
+body {
+    background-color: var(--light-black);
+}
+
+main {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* Start Header Section */
+header {
+    text-align: center;
+    margin: 50px;
+    font-weight: 400;
+}
+
+header h1 {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+/* End Header Section */
+
+/* Start Scoreboard Section */
+.scoreboard {
+    margin: 30px;
+    padding-bottom: 30px;
+}
+
+.scoreboard h2 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+table {
+    border: 1px solid white;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+tr th {
+    color: white;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+tr td {
+    font-size: 20px;
+    color: pink;
+    padding-top: 8px;
+}
+/* End Scroeboard Section */
+
+/* Start Player Choice Section */
+.choice {
+    margin: 20px;
+}
+
+.choice button {
+    background-color: var(--light-black);
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.choice button i {
+    font-size: 80px;
+    padding: 45px;
+    color: pink;
+}
+/* End Player Choice Section */
+
+/* Start Reset Button */
+.restart {
+    border: none;
+    background-color: pink;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* End Reset Button */
+
+/* Start Deteremine Winner Section */
+.deteremine-winner {
+    margin-top: 50px;
+}
+
+.deteremine-winner p {
+    font-size: 30px;
+    color: white;
+}
+
+.showChoices {
+    margin: 30px 0;
+}
+
+.showChoices span {
+    color: pink;
+}
+/* End Deteremine Winner Section */
+
+/* Start Media Queries */
+
+/* End Media Queries */
