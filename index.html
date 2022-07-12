@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/cs/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <title>Rock, Paper, Scissor</title>
+</head>
+<body>
+
+    <!--Header Section-->
+    <header>
+        <h1>Rock, Paper, Scissor Game!</h1>
+    </header>
+
+    <!--Line below header-->
+    <hr>
+
+    <!--Main Section-->
+    <main>
+
+        <!--Section for starting the game-->
+        <section>
+
+            <!--Scoreboard section-->
+            <div class="scoreboard">
+                <h2>Scoreboard:</h2>
+                <table>
+                    <tr>
+                        <th>Your Score</th>
+                        <th>Computer Score</th>
+                    </tr>
+                    <tr>
+                        <td><span id="player-score">0</span></td>
+                        <td><span id="computer-score">0</span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!--Player choice for rock, paper, scissor-->
+            <div class="choice">
+                <button id="Rock"><i class="fa-solid fa-hand-back-fist"></i></button>
+                <button id="Paper"><i class="fa-solid fa-hand"></i></button>
+                <button id="Scissor"><i class="fa-solid fa-hand-scissors"></i></button>
+            </div>
+
+            <!--Display the message of who wins and who lose-->
+            <div class="deteremine-winner">
+                <p id="winner"></p>
+                <p class="showChoices">Your Choice: <span id="displayPlayerChoice"></span> Computer Choice: <span id="displayComputerChoice"></span></p>
+            </div>
+
+            <!--Reset button that reset everything-->
+            <button class="restart">Restart Game</button>
+        </section>       
+    </main>
+    
+    <!--Script File-->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
