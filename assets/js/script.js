@@ -72,3 +72,23 @@ const startGame = (playerChoice) => {
         displayComputerScore.textContent = computerScore;
     };
 };
+
+//Add event listener to determine the player choice 
+rockButton.addEventListener("click", () => { playerChoice = startGame("Rock") });
+paperButton.addEventListener("click", () => { playerChoice = startGame("Paper") });
+scissorButton.addEventListener("click", () => { playerChoice = startGame("Scissor") });
+
+//Add event listener to restart the game 
+restartButton.addEventListener("click", () => {
+
+    //Set the score back to zero
+    playerScore = 0;
+    computerScore = 0;
+
+    //Set all the text content to empty and score to 0 
+    displayPlayerScore.textContent = playerScore;
+    displayComputerScore.textContent = computerScore;
+    determineWinner.textContent = " ";
+    showPlayerChoice.textContent = " ";
+    showComputerChoice.textContent = " ";
+});
