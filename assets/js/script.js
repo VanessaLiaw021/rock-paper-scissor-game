@@ -13,3 +13,19 @@ const restartButton = document.querySelector(".restart");
 let playerScore = 0;
 let computerScore = 0;
 let playerChoice;
+
+//Store the computer choice in an array 
+const choices = ["Rock", "Paper", "Scissor"];
+
+//Function that get the choices of the player and computer choice
+const getComputerChoice = () => {
+
+    //Get random computer choice 
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+    //Display the computer choice 
+    showComputerChoice.textContent = computerChoice;
+
+    //Return the computer choice 
+    return computerChoice;
+};
