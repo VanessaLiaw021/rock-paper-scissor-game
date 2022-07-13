@@ -84,8 +84,8 @@ tr td {
 }
 
 .choice button i {
-    font-size: 80px;
-    padding: 45px;
+    font-size: 50px;
+    padding: 30px;
     color: pink;
 }
 /* End Player Choice Section */
@@ -116,9 +116,38 @@ tr td {
 
 .showChoices span {
     color: pink;
+    padding: 10px;
 }
 /* End Deteremine Winner Section */
 
-/* Start Media Queries */
+/* Media Queries */
+@media only screen and (max-width: 480px) {
 
-/* End Media Queries */
+    /* Start Header Section */
+    header h1 {
+        line-height: 60px;
+    }
+    /* End Header Section */
+
+    /* Start Player Choice Section */
+    .choice  {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .choice button {
+        margin: 20px 10px;
+    }
+
+    .choice button i {
+        font-size: 30px;
+    }
+    /* End Player Choice Section */
+
+    /* Start Reset Button */
+    .restart {
+        margin-bottom: 30px;
+    }
+    /* End Reset Button */
+}
