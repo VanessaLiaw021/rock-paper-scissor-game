@@ -121,6 +121,15 @@ tr td {
 }
 /* End Deteremine Winner Section */
 
+/* Start Footer Section */
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+/* End Footer Section */
+
 /* Media Queries */
 @media only screen and (max-width: 480px) {
 
