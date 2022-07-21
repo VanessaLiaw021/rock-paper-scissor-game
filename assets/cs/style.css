@@ -99,6 +99,10 @@ tr td {
     cursor: pointer;
     color: black;
 }
+
+.restart.hide {
+    display: none;
+}
 /* End Reset Button */
 
 /* Start Deteremine Winner Section */

@@ -8,6 +8,7 @@ const determineWinner = document.querySelector("#winner");
 const showPlayerChoice = document.querySelector("#displayPlayerChoice");
 const showComputerChoice = document.querySelector("#displayComputerChoice");
 const restartButton = document.querySelector(".restart");
+const buttonClicked = document.querySelector(".choice button");
 
 //Variables to keep track of score 
 let playerScore = 0;
@@ -16,6 +17,13 @@ let playerChoice;
 
 //Store the computer choice in an array 
 const choices = ["Rock", "Paper", "Scissor"];
+
+//Add Event Listener to show and remove the restart button
+window.addEventListener("DOMContentLoaded", () => {
+
+    //Hide the restart button until the game start
+    restartButton.classList.add("hide");
+});
 
 //Function that get the choices of the player and computer choice
 const getComputerChoice = () => {
@@ -71,6 +79,9 @@ const startGame = (playerChoice) => {
         //Display the computer score 
         displayComputerScore.textContent = computerScore;
     };
+
+    //If player score or computer score is greater than, mean game started and restart button shows
+    if (playerScore >= 1 || computerScore >= 1) restartButton.classList.remove("hide");
 };
 
 //Add event listener to determine the player choice 
@@ -91,4 +102,7 @@ restartButton.addEventListener("click", () => {
     determineWinner.textContent = " ";
     showPlayerChoice.textContent = " ";
     showComputerChoice.textContent = " ";
+
+    //Hide the button when the button is clicked
+    restartButton.classList.add("hide");
 });
