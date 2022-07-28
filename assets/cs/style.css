@@ -18,6 +18,10 @@ body {
     background-color: var(--light-black);
 }
 
+body.light {
+    background-color: #f8f8ff;
+}
+
 main {
     text-align: center;
 }
@@ -31,12 +35,38 @@ header {
     text-align: center;
     margin: 50px;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header h1 {
     color: white;
     font-size: 40px;
     letter-spacing: 5px;
+}
+
+header h1.light {
+    color: black;
+}
+
+header i {
+    color: white;
+    margin: 15px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header i.light {
+    color: black;
+}
+
+#light-mode {
+    margin-right: 15px;
+}
+
+header i:hover {
+    color: pink;
 }
 /* End Header Section */
 
@@ -51,6 +81,11 @@ header h1 {
     color: white;
     margin-bottom: 20px;
 }
+
+.scoreboard h2.light {
+    color: black;
+}
+
 table {
     border: 1px solid white;
     margin: 0 auto;

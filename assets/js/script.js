@@ -9,6 +9,7 @@ const showPlayerChoice = document.querySelector("#displayPlayerChoice");
 const showComputerChoice = document.querySelector("#displayComputerChoice");
 const restartButton = document.querySelector(".restart");
 const buttonClicked = document.querySelector(".choice button");
+const toggleTheme = document.querySelector("#light-mode");
 
 //Variables to keep track of score 
 let playerScore = 0;
@@ -105,4 +106,11 @@ restartButton.addEventListener("click", () => {
 
     //Hide the button when the button is clicked
     restartButton.classList.add("hide");
+});
+
+//Event Listener that allow user to toggle between dark/light mode 
+toggleTheme.addEventListener("click", () => {
+    document.body.classList.add("light");
+    document.querySelector("h1").classList.add("light");
+    document.querySelector(".scoreboard h2").classList.add("light");
 });
